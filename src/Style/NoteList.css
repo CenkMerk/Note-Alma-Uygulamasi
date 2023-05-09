@@ -1,0 +1,13 @@
+.FlexWrap-mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.Grid-mode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}

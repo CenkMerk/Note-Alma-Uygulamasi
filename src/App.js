@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Header } from "./components/Header";
+import { NoteCreate } from "./components/NoteCreate";
+import { NoteList } from "./components/NoteList";
+import NotesContext from "./Context/Notes";
+import { useContext } from "react";
 
 function App() {
+  const { darkMode } = useContext(NotesContext);
+
+  const darkModeStyle = {
+    backgroundColor: darkMode ? "#202124" : "#e8eaed",
+    color: darkMode ? "#e8eaed" : "#202124"
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={darkModeStyle}>
+      <Header />
+      <NoteCreate />
+      <NoteList />
     </div>
   );
 }

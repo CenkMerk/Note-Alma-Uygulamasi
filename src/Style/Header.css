@@ -1,0 +1,24 @@
+.HeaderComponent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0px 20px;
+}
+
+.NavbarIkonlar{
+    display: flex;
+    gap: 10px;
+}
+
+.NavbarIkon{
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.NavbarIkon:hover{
+    background-color: #5f636828;
+}
