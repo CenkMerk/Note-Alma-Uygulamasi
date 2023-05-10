@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Note-Alma-Uygulamasi/static/css/main.3a2cb024.css",
+    "main.js": "/Note-Alma-Uygulamasi/static/js/main.dec680f4.js",
+    "index.html": "/Note-Alma-Uygulamasi/index.html",
+    "main.3a2cb024.css.map": "/Note-Alma-Uygulamasi/static/css/main.3a2cb024.css.map",
+    "main.dec680f4.js.map": "/Note-Alma-Uygulamasi/static/js/main.dec680f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a2cb024.css",
+    "static/js/main.dec680f4.js"
+  ]
+}
