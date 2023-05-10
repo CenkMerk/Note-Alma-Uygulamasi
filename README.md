@@ -16,7 +16,7 @@
 - Liste görünümü modları
 
 
-**[Buradan](https://CenkMerk.github.io/Rastgele-Kullanici-Olusturma) projenin çalışır halini inceleyebilirsiniz.**
+**[Buradan](https://cenkmerk.github.io/Note-Alma-Uygulamasi/) projenin çalışır halini inceleyebilirsiniz.**
 
 
 ### Proje Adımları
