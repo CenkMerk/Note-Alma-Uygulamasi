@@ -22,7 +22,7 @@ export const Header = () => {
         <button className="NavbarIkon" style={darkModeStyle} onClick={() => setNoteListStyle(false)}>
           <CiGrid41 size={22} />
         </button>
-        <button className="NavbarIkon">
+        <button className="NavbarDarkIkon">
           <MdOutlineDarkMode size={22} style={darkModeStyle} onClick={() => setDarkMode(!darkMode)}/>
         </button>
       </div>

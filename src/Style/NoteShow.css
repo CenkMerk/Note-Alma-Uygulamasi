@@ -24,3 +24,10 @@
 .NoteButton:hover{
     background-color: #5f636828;
 }
+
+
+@media (max-width: 700px) {
+  .NoteShowComponent {
+    width: calc(min(600px, max(245px, 50%)));
+  }
+}

@@ -6,7 +6,8 @@ import NotesContext from "../Context/Notes";
 import { NoteCreate } from "./NoteCreate";
 
 export const NoteShow = ({ note }) => {
-  const { deleteNotesById, editNotesById,noteListStyle,darkMode } = useContext(NotesContext);
+  const { deleteNotesById, editNotesById, noteListStyle, darkMode } =
+    useContext(NotesContext);
 
   const [showEdit, setShowEdit] = useState(false);
 
@@ -22,7 +23,7 @@ export const NoteShow = ({ note }) => {
     setShowEdit(!showEdit);
   };
 
-  //Alttaki fonksiyon edit halindeki notun güncelle butonuna tıklandıktan sonra 
+  //Alttaki fonksiyon edit halindeki notun güncelle butonuna tıklandıktan sonra
   //yeni verileri kaydetmek içindir.
   const handleSubmit = (id, updatedTitle, updatedDesc) => {
     setShowEdit(false);
@@ -30,11 +31,11 @@ export const NoteShow = ({ note }) => {
   };
 
   const divWidth = {
-    width: noteListStyle ? 'calc(min(600px, max(245px, 50%)))' : '245px',
+    width: noteListStyle ? "calc(min(600px, max(245px, 50%)))" : "245px",
     border: darkMode ? "1px solid #e8eaed" : "none",
   };
   const darkModeStyle = {
-    color: darkMode ? "#e8eaed" : "black"
+    color: darkMode ? "#e8eaed" : "black",
   };
   return (
     <>
@@ -46,10 +47,18 @@ export const NoteShow = ({ note }) => {
           <div>{note.desc}</div>
           <div className="ButtonDiv">
             <button className="NoteButton">
-              <AiOutlineDelete size={20} onClick={handleDeleteClick} style={darkModeStyle} />
+              <AiOutlineDelete
+                size={20}
+                onClick={handleDeleteClick}
+                style={darkModeStyle}
+              />
             </button>
             <button className="NoteButton">
-              <AiOutlineEdit size={20} onClick={handleEditClick} style={darkModeStyle} />
+              <AiOutlineEdit
+                size={20}
+                onClick={handleEditClick}
+                style={darkModeStyle}
+              />
             </button>
           </div>
         </div>

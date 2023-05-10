@@ -32,3 +32,9 @@
 .SubmitButton:hover {
   background-color: #5f636828;
 }
+
+@media (max-width: 700px){
+  .NoteForm{
+      width: calc(min(600px, max(245px, 50%)));
+  }
+}

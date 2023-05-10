@@ -5,9 +5,18 @@
   gap: 50px;
 }
 
-.Grid-mode{
+.Grid-mode {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .FlexWrap-mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
