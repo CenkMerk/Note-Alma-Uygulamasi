@@ -4,11 +4,20 @@
 
 - useState kullanımı
 
-- useEffect kullanımı
+- useContext ile alt bileşenlere durum ve diğer verilerin aktarılması
 
-- axios ile api ye istek atma
 
-- json tipindeki veriyi okuma ve kullanma
+### 🛠️ Fonksiyonlar
+
+- Not ekleme, silme ve düzenleme
+
+- Karanlık tema modu
+
+- Liste görünümü modları
+
+
+**[Buradan](https://CenkMerk.github.io/Rastgele-Kullanici-Olusturma) projenin çalışır halini inceleyebilirsiniz.**
+
 
 ### Proje Adımları
 
@@ -100,12 +109,11 @@ function App() {
 export default App;
 ```
 
-İkonları kullana bilmek için terminale:
+İkonları kullanabilmek için terminale:
 
 `npm install react-icons`
 
-İlk olarak navbar kısmını yapalım. Bu kısımda notlarımızın görünümünü belirleyen ikonlar ve tema
-modumuzu belirleyen bir ikon olacak.
+İlk olarak, navbar kısmını yapalım. Bu kısımda notlarımızın görünümünü belirleyen ikonlar ve tema modumuzun belirleyen ikonlar olacak
 
 `Header.js`
 
@@ -193,7 +201,7 @@ export const NoteCreate = () => {
 };
 ```
 
-Verilerimizi diğer componentlerle rahatlıkla paylaşabilmek için `contex api` yapımızı oluşturalım.
+Verilerimizi diğer componentlerle rahatlıkla paylaşabilmek için `Context API` yapımızı oluşturalım.
 
 `src` klasörünün altına gidip `Context` adlı bir klasör oluşturalım. Bu klasörün altına gidip
 `Notes.js` adlı dosyamızı oluşturalım.
@@ -336,7 +344,7 @@ export const NoteList = () => {
 };
 ```
 
-Konsolda bir sorun gözükmüyor tüm notlarım geliyor. Şimdi konsola yazdırmak yerine bu notları bir
+Konsolda bir sorun gözükmüyor tüm notlar geliyor. Şimdi konsola yazdırmak yerine bu notları bir
 componente gönderelim ve orada gösterelim.
 
 `components` klasörünün altına gidip `NoteShow.js` adlı bir dosya oluşturalım.
