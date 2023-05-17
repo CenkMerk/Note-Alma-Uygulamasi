@@ -1,4 +1,5 @@
 import "./App.css";
+import 'animate.css';
 import { Header } from "./components/Header";
 import { NoteCreate } from "./components/NoteCreate";
 import { NoteList } from "./components/NoteList";

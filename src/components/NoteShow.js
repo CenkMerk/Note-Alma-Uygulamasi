@@ -42,7 +42,10 @@ export const NoteShow = ({ note }) => {
       {showEdit ? (
         <NoteCreate note={note} noteUpdate={true} onUpdate={handleSubmit} />
       ) : (
-        <div className="NoteShowComponent" style={divWidth}>
+        <div
+          className="NoteShowComponent animate__animated animate__fadeIn"
+          style={divWidth}
+        >
           <div>{note.title}</div>
           <div>{note.desc}</div>
           <div className="ButtonDiv">

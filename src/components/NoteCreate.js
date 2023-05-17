@@ -53,7 +53,7 @@ export const NoteCreate = ({ note, noteUpdate, onUpdate }) => {
   return (
     <>
       {noteUpdate ? (
-        <form className="NoteForm" style={divWidth}>
+        <form className="NoteForm animate__animated animate__fadeIn" style={divWidth}>
           <input
             className="TitleInput"
             placeholder="Başlık giriniz.."
@@ -73,7 +73,7 @@ export const NoteCreate = ({ note, noteUpdate, onUpdate }) => {
           </button>
         </form>
       ) : (
-        <div className="NoteCreateComponent">
+        <div className="NoteCreateComponent animate__animated animate__fadeIn animate__delay-3s">
           <form className="NoteForm" style={darkModeStyleForm}>
             <input
               className="TitleInput"

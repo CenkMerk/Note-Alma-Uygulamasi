@@ -13,7 +13,7 @@ export const Header = () => {
     color: darkMode ? "#e8eaed" : "black"
   };
   return (
-    <nav className="HeaderComponent">
+    <nav className="HeaderComponent animate__animated animate__fadeIn animate__delay-2s">
       <h4>Not Alma Uygulaması</h4>
       <div className="NavbarIkonlar">
         <button className="NavbarIkon" style={darkModeStyle} onClick={() => setNoteListStyle(true)}>
