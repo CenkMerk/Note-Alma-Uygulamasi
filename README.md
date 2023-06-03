@@ -15,6 +15,8 @@
 
 - Liste görünümü modları
 
+- Responsive web tasarımı
+
 
 **[Buradan](https://cenkmerk.github.io/Note-Alma-Uygulamasi/) projenin çalışır halini inceleyebilirsiniz.**
 
